@@ -182,7 +182,8 @@ export const C_11 = {
     { level: 4, labelKey: "C114", normClass: "A", sriScores: { energyEfficiency: 1, flexibility: 0, comfort: 0, convenience: 1, health: 0, maintenance: 3, information: 3 } }
   ],
   gro: { basic: [{ level: 3 }], optional: [{ level: 4 }] },
-  bacs: { level: 3 }
+  // date : nov 2026
+  bacs: { level: 2 }
 };
 
 export const C_12 = {

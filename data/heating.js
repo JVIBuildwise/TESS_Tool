@@ -216,7 +216,8 @@ export const H_11 = {
     { level: 4, labelKey: "H114", normClass: "A", sriScores: { energyEfficiency: 1, flexibility: 0, comfort: 0, convenience: 1, health: 0, maintenance: 3, information: 3 } }
   ],
   gro: { basic: [{ level: 3 }], optional: [{ level: 4 }] },
-  bacs: { level: 3 }
+  // Date : novembre 2026
+  bacs: { level: 2 }
 };
 
 export const H_12 = {

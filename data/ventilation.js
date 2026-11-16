@@ -9,7 +9,7 @@
 export const V1 = {
   id: "V1", domain: "ventilation", titleKey: "V1", exprKey: "V1_expl",
   sriCode: "V-1a", normCode: "VENT_RMFLOW_CTRL",
-  applicableFor: ["SRI", "ISO52120", "GRO", "DIN"], triage: true,
+  applicableFor: ["SRI", "ISO52120", "GRO", "DIN", "BACS"], triage: true,
   levels: [
     { level: 0, labelKey: "V10", normClass: "D", sriScores: { energyEfficiency: 0, flexibility: 0, comfort: 0, convenience: 0, health: 0, maintenance: 0, information: 0 } },
     { level: 1, labelKey: "V11", normClass: "B", sriScores: { energyEfficiency: 1, flexibility: 0, comfort: 1, convenience: 1, health: 1, maintenance: 0, information: 0 } },
@@ -17,8 +17,8 @@ export const V1 = {
     { level: 3, labelKey: "V13", normClass: "A", sriScores: { energyEfficiency: 2, flexibility: 0, comfort: 3, convenience: 3, health: 3, maintenance: 0, information: 0 } },
     { level: 4, labelKey: "V14", normClass: "A", sriScores: { energyEfficiency: 3, flexibility: 0, comfort: 3, convenience: 3, health: 3, maintenance: 0, information: 0 } }
   ],
-  gro: { basic: [{ level: 2 }], optional: [{ level: 4 }] }
-  // Non repris dans la méthode BACS (BACS-3R : "x")
+  gro: { basic: [{ level: 2 }], optional: [{ level: 4 }] },
+  bacs: { level: 1 }
 };
 
 export const V2 = {
@@ -151,6 +151,21 @@ export const V_11 = {
   bacs: { level: 2 }
 };
 
-export const ventilationServices = [V1, V2, V3, V4, V5, V6, V7, V8, V9, V_10, V_11];
+// Nouveau service nov 2026
+export const V_12 = {
+  id: "V_12", domain: "ventilation", titleKey: "V_12", exprKey: null,
+  sriCode: null, normCode: null,
+  applicableFor: ["BACS"], 
+  levels: [
+    { level: 0, labelKey: "V120", normClass: null, sriScores: { energyEfficiency: 0, flexibility: 0, comfort: 0, convenience: 0, health: 0, maintenance: 0, information: 0 } },
+    { level: 1, labelKey: "V121", normClass: null, sriScores: { energyEfficiency: 1, flexibility: 0, comfort: 1, convenience: 1, health: 0, maintenance: 0, information: 0 } },
+    { level: 2, labelKey: "V122", normClass: null, sriScores: { energyEfficiency: 2, flexibility: 1, comfort: 2, convenience: 2, health: 0, maintenance: 0, information: 0 } },
+    { level: 3, labelKey: "V123", normClass: null, sriScores: { energyEfficiency: 3, flexibility: 2, comfort: 3, convenience: 3, health: 0, maintenance: 0, information: 0 } }
+  ],
+  // Date : novembre 2026
+  bacs: { level: 2 }
+};
+
+export const ventilationServices = [V1, V2, V3, V4, V5, V6, V7, V8, V9, V_10, V_11, V_12];
 
 export default ventilationServices;

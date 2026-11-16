@@ -488,12 +488,18 @@ export const translations = {
   V100: { fr: "Aucune régulation automatique", en: "No automatic control" },
   V101: { fr: "Régulation selon le point de rosée", en: "Dew point control" },
   V102: { fr: "Régulation d'humidité directe", en: "Direct humidity control" },
-  V_11: { fr: "Remontée d'informations", en: "Reporting information" },
+  V_11: { fr: "Remontée d'informations sur la qualité de l'air", en: "Reporting IAQ information" },
   V11_expl: { fr: "Remontée d'informations sur la qualité de l'air intérieur", en: "Reporting information regarding IAQ" },
   V110: { fr: "Aucune", en: "None" },
   V111: { fr: "Capteurs de qualité de l'air et suivi autonome", en: "Air quality sensors and real time autonomous monitoring" },
   V112: { fr: "Suivi temps réel + historique disponible aux occupants", en: "Real time monitoring & historical information available to occupants" },
   V113: { fr: "Idem + alarme maintenance/actions occupants", en: "Idem + warning on maintenance needs or occupant actions" },
+  V_12: { fr: "Remontée d'informations sur la performance de la ventilation", en: "Report information regarding ventilation system performance" },
+  V120: { fr: "Aucune", en: "None" },
+  V121: { fr: "Remontée centralisée d'indicateurs temps réel", en: "Central or remote reporting of current performance KPIs" },
+  V122: { fr: "Remontée d'indicateurs temps réel et données historisées", en: "Central or remote reporting of current KPIs and historical data" },
+  V123: { fr: "Remontée incluant prévisions et comparaisons", en: "Reporting including forecasting and/or benchmarking" },
+  V124: { fr: "Remontée incluant prévisions, dérives et gestion prévisionnelle", en: "Reporting including forecasting, predictive management and fault detection" },
 
   // =======================================================================
   // L - Commande de l'éclairage / Lighting control
