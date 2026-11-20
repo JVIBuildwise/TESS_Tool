@@ -177,7 +177,15 @@ button {
   color: var(--color-text-muted);
   padding: 16px 24px 24px;
 }
-
+.footer-contact {
+    margin: 6px 0 0;
+    font-size: 12px;
+}
+.footer-contact a {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    text-decoration: underline;
+}
 /* -----------------------------------------------------------------------
    Navigation principale (3 onglets : Main info & objectives / Évaluation /
    Résultats)
