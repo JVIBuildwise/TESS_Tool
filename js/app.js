@@ -1068,6 +1068,23 @@ function applyStaticTranslations() {
       "FOOTER_TEXT",
       "Les sélections sont sauvegardées automatiquement dans votre navigateur (localStorage)."
     );
+    // Contact en cas de problème (traduit selon la langue active)
+    const CONTACT_EMAIL = "juliette.vinel@buildwise.be";
+    let contact = document.getElementById("app-footer-contact");
+    if (!contact) {
+      contact = document.createElement("p");
+      contact.id = "app-footer-contact";
+      contact.className = "footer-contact";
+      footer.insertAdjacentElement("afterend", contact);
+    }
+    contact.textContent = "";
+    contact.append(t("FOOTER_CONTACT_TEXT", "Un problème ? Contactez-nous : "));
+    const mailLink = document.createElement("a");
+    mailLink.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      t("FOOTER_CONTACT_SUBJECT", "Outil TESS")
+    )}`;
+    mailLink.textContent = CONTACT_EMAIL;
+    contact.appendChild(mailLink);
   }
 }
 
@@ -2158,7 +2175,7 @@ function renderNormResultsSection() {
         name.className = "fail-item-name";
         // service.name existe pour le pseudo-service du groupe OR (pas de titleKey)
         name.textContent = isOrGroup
-          ? service.name
+          ? t("OR_GROUP_NAME", service.name)
           : t(service.titleKey, service.id);
         item.appendChild(name);
 
