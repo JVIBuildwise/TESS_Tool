@@ -44,6 +44,18 @@ export const translations = {
     fr: "Les sélections sont sauvegardées automatiquement dans votre navigateur (localStorage). Utilisez « Exporter » pour sauvegarder un fichier JSON réutilisable pour les calculs SRI / ISO 52120 / GRO / BACS.",
     en: "Your selections are automatically saved in your browser (localStorage). Use \u201CExport\u201D to save a JSON file that can be reused for SRI / ISO 52120 / GRO / BACS calculations."
   },
+    // --- Contact en cas de problème ---
+  FOOTER_CONTACT_TEXT: {
+    fr: "Un problème, une erreur ou une remarque ? Contactez-nous : ",
+    en: "Found a problem, an error or have a comment? Contact us: ",
+    nl: "Een probleem, een fout of een opmerking? Neem contact op via: "
+  },
+  FOOTER_CONTACT_SUBJECT: {
+    fr: "Outil TESS - Signalement d'un problème",
+    en: "TESS tool - Issue report",
+    nl: "TESS-tool - Melding van een probleem"
+  },
+
   // --- NOUVEAU : les 3 onglets de navigation principale ---
   NAV_HOME: { fr: "Main info & objectives", en: "Main info & objectives" },
   NAV_EVALUATION: { fr: "Évaluation", en: "Evaluation" },
@@ -142,7 +154,17 @@ export const translations = {
   RESULT_GLOBAL_LABEL: { fr: "Résultat global du bâtiment", en: "Overall building result" },
   RESULT_DOMAIN_EVALUATED_TEMPLATE: { fr: "{done}/{total} services pris en compte", en: "{done}/{total} services considered" },
   FAILING_SERVICES_TITLE_TEMPLATE: { fr: "Services n'atteignant pas la classe visée ({target})", en: "Services not meeting the target class ({target})" },
-  FAILING_SERVICES_EMPTY: { fr: "Tous les services évalués atteignent la classe visée 🎉", en: "All evaluated services meet the target class 🎉" },
+  FAILING_SERVICES_EMPTY: { fr: "Tous les services évalués atteignent la classe visée 🎉", en: "All evaluated services meet the target class 🎉" },    // --- Groupe OR E2 / E3 / E4 (résultats de la norme) ---
+  OR_GROUP_NAME: {
+    fr: "Au moins un des services E2, E3 ou E4 doit atteindre la classe visée",
+    en: "At least one of E2, E3 or E4 must meet the target class",
+    nl: "Minstens één van de diensten E2, E3 of E4 moet de beoogde klasse halen"
+  },
+  OR_GROUP_LABEL: {
+    fr: "OU — aucun des trois n'atteint la classe visée",
+    en: "OR — none of the three meets the target class",
+    nl: "OF — geen van de drie haalt de beoogde klasse"
+  },
   BACS_GLOBAL_LABEL: { fr: "Conformité BACS globale du bâtiment", en: "Overall building BACS compliance" },
   RESULT_DOMAIN_BACS_TEMPLATE: { fr: "{done}/{total} services conformes", en: "{done}/{total} services compliant" },
   FAILING_BACS_TITLE: { fr: "Services n'atteignant pas le niveau BACS requis", en: "Services not meeting the required BACS level" },
